@@ -143,3 +143,4 @@ logger:
     lvgl: DEBUG
     display: DEBUG
     app: DEBUG
+
