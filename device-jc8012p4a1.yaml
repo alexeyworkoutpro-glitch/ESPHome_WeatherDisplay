@@ -3,7 +3,38 @@
 # Original file from: https://github.com/agillis/esphome-modular-lvgl-buttons/blob/29410088b8520b870e00e996c278d1a822031842/modules/hardware/guition-esp32-p4-jc8012p4a1.yaml
 # with the help of: https://community.home-assistant.io/t/jc8012p4a1-guition-esp32-p4-esp32-c6/939971
 # and kvj: https://github.com/kvj/esphome
+packages:
+  <<: !include data/fonts.yaml
+  <<: !include data/images.yaml
+  <<: !include data/mappings.yaml
+  <<: !include data/text_sensors.yaml
+  <<: !include data/times.yaml
 
+substitutions:
+  font: "fonts/OpenSans-Medium.ttf"
+
+font:
+  - file: "fonts/OpenSans-Medium.ttf"
+    id: sm
+    size: 16
+  - file: "fonts/OpenSans-Medium.ttf"
+    id: md
+    size: 24
+  - file: "fonts/OpenSans-Medium.ttf"
+    id: lg
+    size: 32
+  - file: "fonts/materialdesignicons-webfont.ttf"
+    id: icons
+    size: 24
+
+image:
+  defaults:
+    type: rgb565
+  images:
+    - file: "img/bg.png"
+      id: bg_img
+    - file: "img/home.png"
+      id: home_img
 substitutions:
   font: "fonts/OpenSans-Medium.ttf"
 
