@@ -4,13 +4,6 @@
 # with the help of: https://community.home-assistant.io/t/jc8012p4a1-guition-esp32-p4-esp32-c6/939971
 # and kvj: https://github.com/kvj/esphome
 
-packages:
-  - !include data/fonts.yaml
-  - !include data/images.yaml
-  - !include data/mappings.yaml
-  - !include data/text_sensors.yaml
-  - !include data/times.yaml
-
 substitutions:
   font: "fonts/OpenSans-Medium.ttf"
 
@@ -102,8 +95,8 @@ display:
     id: my_display
 
 wifi:
-  ssid: !secret wifi_ssid
-  password: !secret wifi_password
+  ssid: "MTS_GPON_ab2b70"
+  password: "Gbi393a3"
 
 esp32_hosted:
   variant: ESP32C6
